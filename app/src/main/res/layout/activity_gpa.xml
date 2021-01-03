@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GpaViewActivity">
+
+    <ImageView
+        android:id="@+id/imageBackgroundTop"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:contentDescription="@string/top_background_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/gpaProgressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/home_background"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageBackgroundBottom"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:contentDescription="@string/bottom_background_gradient"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpaView"
+        app:srcCompat="@drawable/home_background"
+        tools:layout_editor_absoluteX="-71dp" />
+
+    <ProgressBar
+        android:id="@+id/gpaProgressBar"
+        style="@style/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gpaView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:text="@string/default_00"
+        android:textColor="#000000"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gpaProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gpaProgressBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_gpa"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/gpaProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/wizardVector"
+        android:layout_width="219dp"
+        android:layout_height="201dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/a_friendly_gpa_wizard"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgroundTop"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/ic_wizzzman" />
+
+    <ImageView
+        android:id="@+id/starVectorMiddle"
+        android:layout_width="293dp"
+        android:layout_height="257dp"
+        android:contentDescription="@string/more_sparkling_stars"
+
+        app:layout_constraintBottom_toTopOf="@+id/imageBackgroundBottom"
+        app:layout_constraintEnd_toEndOf="@+id/gpaProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackgroundTop"
+        app:srcCompat="@drawable/ic_stars" />
+
+    <Button
+        android:id="@+id/addGradesButton"
+        android:layout_width="163dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="160dp"
+        android:background="#DFB78727"
+        android:onClick="gradesButtonClicked"
+        android:text="@string/add_grades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBackgroundBottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GPA Wizard</string>
+    <string name="default_00">0.0</string>
+    <string name="top_background_gradient">top background gradient</string>
+    <string name="bottom_background_gradient">bottom background gradient</string>
+    <string name="current_gpa">Current GPA</string>
+    <string name="add_grades">Add Grades</string>
+    <string name="add_your_grades">Add Your Grades</string>
+    <string name="a_friendly_gpa_wizard">a friendly gpa wizard</string>
+    <string name="sparkling_stars">sparkling stars</string>
+    <string name="more_sparkling_stars">more sparkling stars</string>
+    <string name="three_floating_books">three floating books</string>
+    <string name="background_gradient">background gradient</string>
+    <string name="save">Save</string>
+    <string name="gpa_hint">5…</string>
+    <string name="subject_name">Subject Name:</string>
+    <string name="title_grade">Grade:</string>
+    <string name="subject_name_hint">subject…</string>
+    <string name="lost_of_stars">lost of stars</string>
+    <string name="defaultGrade_0">0</string>
+    <string-array name="possible_grades">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>
